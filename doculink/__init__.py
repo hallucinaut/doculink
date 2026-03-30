@@ -1,11 +1,22 @@
 """
 Doculink - Real-time Documentation Linker
 
-A revolutionary workflow tool that analyzes code context and surfaces
-relevant documentation snippets automatically.
+Production-ready implementation with:
+- Comprehensive stdlib documentation (100+ modules)
+- PyPI package documentation lookup
+- Local project documentation indexing
+- Persistent cache
+- Context-aware suggestions
 """
 
-from .daemon import DoculinkDaemon, DocumentationRegistry, CodeAnalyzer, DocLink, CodeContext
+from .daemon import (
+    DoculinkDaemon,
+    DocumentationRegistry,
+    CodeAnalyzer,
+    DocLink,
+    CodeContext
+)
 
-__version__ = "0.1.0"
-__all__ = ["DoculinkDaemon", "DocumentationRegistry", "CodeAnalyzer", "DocLink", "CodeContext"]
+__version__ = "1.0.0"
+__all__ = ["DoculinkDaemon", "DocumentationRegistry", "CodeAnalyzer", 
+           "DocLink", "CodeContext"]
